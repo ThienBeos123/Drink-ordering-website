@@ -171,6 +171,7 @@ with st.sidebar:
                     with open("generated receipt.docx", "rb") as adu:
                         st.download_button(label="Chốt đơn hàng", data=adu, 
                                            file_name="Hóa đơn.docx")
+                        adu.close()
 
             else:
                 with col4:
